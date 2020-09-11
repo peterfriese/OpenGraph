@@ -2,5 +2,15 @@
 import PackageDescription
 
 let package = Package(
-    name: "OpenGraph"
+    name: "OpenGraph",
+    products: [
+      .library(
+        name: "OpenGraph",
+        targets: ["OpenGraph"])
+    ],
+  targets: [
+    .target(
+      name: "OpenGraph",
+      dependencies: [])
+  ]
 )
